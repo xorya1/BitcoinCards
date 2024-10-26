@@ -9,7 +9,7 @@ import { ethers } from 'ethers';
 import Account from './components/Pages/Account';
 import Boosters from './components/Pages/Boosters';
 import Store from './components/Pages/Store';
-import logo_TCG from './assets/pokemon_TCG.png';
+import logo_TCG from './assets/pokemon_logo.png';
 
 function App() {
   const [account, setAccount] = useState(null);
@@ -186,6 +186,9 @@ function App() {
           <div className="logo-container">
             <img src={logo_TCG} className="logo--TCG" alt="Pokemon TCG logo" />
           </div>
+          <div className="header-text">
+            Let's go Pink!
+          </div>
           <ul>
             <li><Link to="/Account">Account</Link></li>
             <li><Link to="/Store">Store</Link></li>
@@ -247,3 +250,4 @@ function App() {
 }
 
 export default App;
+                   
