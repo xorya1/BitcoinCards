@@ -31,7 +31,7 @@ const Boosters = ({ openBooster, ownerCards, opened, setOpened }) => {
       if (opened) {
         fetchPokemonCards();
       }
-      // Fetch booster sets
+
       const fetchSets = async () => {
         try {
           const [
@@ -43,7 +43,7 @@ const Boosters = ({ openBooster, ownerCards, opened, setOpened }) => {
             aquapolisResult,
             legendaryCollectionResult,
             rubySapphireResult,
-            sandstormResult,
+            sandstormResult
           ] = await Promise.all([
             pokemon.set.where({ q: "id:base5" }),
             pokemon.set.where({ q: "id:dp1" }),
@@ -53,7 +53,7 @@ const Boosters = ({ openBooster, ownerCards, opened, setOpened }) => {
             pokemon.set.where({ q: "id:ecard2" }), // Aquapolis
             pokemon.set.where({ q: "id:base6" }), // Legendary Collection
             pokemon.set.where({ q: "id:ex1" }), // Ruby & Sapphire
-            pokemon.set.where({ q: "id:ex2" }), // Sandstorm
+            pokemon.set.where({ q: "id:ex2" }) // Sandstorm
           ]);
           setTeamRocket(teamRocketResult);
           setDiamonPearl(diamonPearlResult);
@@ -75,7 +75,6 @@ const Boosters = ({ openBooster, ownerCards, opened, setOpened }) => {
       navigate("/Install");
     }
   }, [ownerCards, opened, navigate]);
-
   return (
     <>
       {loading ? (
@@ -88,7 +87,7 @@ const Boosters = ({ openBooster, ownerCards, opened, setOpened }) => {
             <div className="boosters">
               <div className="start-text">Choose a booster!</div>
               <div className="border-top"></div>
-              <div className="collections container">
+              <div className="collections-container">
                 <div className="collection margin-top--helper">
                   {teamRocket?.data?.[0]?.images?.logo ? (
                     <img
@@ -141,7 +140,6 @@ const Boosters = ({ openBooster, ownerCards, opened, setOpened }) => {
                   )}
                   <p>50 ETH</p>
                 </div>
-                {/* New booster sets */}
                 <div className="collection">
                   {jungle?.data?.[0]?.images?.logo ? (
                     <img
@@ -237,6 +235,7 @@ const Boosters = ({ openBooster, ownerCards, opened, setOpened }) => {
         </>
       )}
     </>
-   );
+  );
 };
+
 export default Boosters;
