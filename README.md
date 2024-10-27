@@ -1,6 +1,4 @@
-Got it! Here’s a detailed README file that explains everything, including how to install dependencies, deploy the contract, and update the contract address. You can copy and paste this directly into your `README.md` file.
 
-### README.md
 
 ```markdown
 # Bitcoin Game
