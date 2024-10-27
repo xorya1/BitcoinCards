@@ -10,6 +10,8 @@ import Account from './components/Pages/Account';
 import Boosters from './components/Pages/Boosters';
 import Store from './components/Pages/Store';
 import logo_TCG from './assets/pokemon_logo.png';
+// Import the new Home component
+import Home from './components/Pages/Home';
 
 function App() {
   const [account, setAccount] = useState(null);
@@ -74,6 +76,7 @@ function App() {
       console.error('Function error: ', error);
     }
   };
+
   async function mintCardNFT(_cardName, _cardNum) {
     const web3 = new Web3(window.ethereum);
     const acc = await web3.eth.getAccounts();
@@ -179,6 +182,7 @@ function App() {
       console.error('Function error: ', error);
     }
   }
+
   return (
     <Router>
       <header className="header">
@@ -186,9 +190,7 @@ function App() {
           <div className="logo-container">
             <img src={logo_TCG} className="logo--TCG" alt="Pokemon TCG logo" />
           </div>
-          <div className="header-text">
-            Let's go Pink!
-          </div>
+          <div className="header-text">Let's go Pink!</div>
           <ul>
             <li><Link to="/Account">Account</Link></li>
             <li><Link to="/Store">Store</Link></li>
@@ -199,9 +201,9 @@ function App() {
       <div className="content">
         <main className="main-content">
           <Routes>
+            <Route exact path="/" element={<Home />} />
             <Route
-              exact
-              path="/*"
+              path="/Account"
               element={
                 <Account
                   account={account}
@@ -215,7 +217,6 @@ function App() {
             />
             <Route
               path="/Boosters"
-              exact
               element={
                 <Boosters
                   openBooster={openBooster}
@@ -227,7 +228,6 @@ function App() {
             />
             <Route
               path="/Store"
-              exact
               element={
                 <Store
                   mintCardNFT={mintCardNFT}
@@ -237,11 +237,7 @@ function App() {
                 />
               }
             />
-            <Route
-              path="/Install"
-              exact
-              element={<Install ownerCards={ownerCards} />}
-            />
+            <Route path="/Install" element={<Install ownerCards={ownerCards} />} />
           </Routes>
         </main>
       </div>
@@ -250,4 +246,3 @@ function App() {
 }
 
 export default App;
-                   
