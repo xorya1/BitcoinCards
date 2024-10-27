@@ -4,7 +4,7 @@ Welcome to the Pokemon NFT Game! This web application allows players to interact
 
 ![Pokemon NFT Game Front Page](src/assets/front-page-screenshot.png) <!-- Update the path to your screenshot -->
 
-done by: Alaoui Belghiti Hanaa and Mekkhishan Arulnantham.
+*Done by* : Alaoui Belghiti Hanaa and Mekkhishan Arulnantham.
 
 ## Table of Contents
 
