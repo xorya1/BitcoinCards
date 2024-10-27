@@ -33,7 +33,7 @@ Welcome to the Bitcoin Game! This web application allows players to interact wit
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/yourusername/BitcoinGame.git
+   git clone https://github.com/xorya0/BitcoinGame.git
    ```
 
 2. **Navigate to the project directory:**
