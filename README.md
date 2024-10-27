@@ -73,7 +73,7 @@ To use the Bitcoin Game, you need to deploy the smart contract. Follow these ste
 
 2. **Navigate to the Hardhat project folder:** (if you have a separate folder for smart contracts)
    ```
-   cd path/to/hardhat-project
+   cd BitcoinGame
    ```
 
 3. **Deploy the contract:**
