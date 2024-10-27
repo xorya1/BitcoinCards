@@ -17,6 +17,9 @@ Welcome to the Pokemon NFT Game! This web application allows players to interact
 - Contributing
 - License
 
+## Important Note
+It’s important to launch this project in Kali Linux. If you do not, you may need to manually modify parts of different resources to ensure everything works correctly.
+
 ## Features
 
 - **User Account Management:** Manage your account details.
