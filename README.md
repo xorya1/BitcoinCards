@@ -2,7 +2,7 @@
 
 Welcome to the Bitcoin Game! This web application allows players to interact with virtual Bitcoin through features such as an account section, a store, and a marketplace.
 
-![Bitcoin Game Front Page](../../assets/front-page-screenshot.png) <!-- Update the path to your screenshot -->
+![Bitcoin Game Front Page](src/assets/front-page-screenshot.png) <!-- Update the path to your screenshot -->
 
 ## Table of Contents
 
