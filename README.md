@@ -1,8 +1,8 @@
-# Bitcoin Game
+# Pokemon NFT Game
 
-Welcome to the Bitcoin Game! This web application allows players to interact with virtual Bitcoin through features such as an account section, a store, and a marketplace.
+Welcome to the Pokemon NFT Game! This web application allows players to interact with virtual Bitcoin through features such as an account section, a store, and a marketplace.
 
-![Bitcoin Game Front Page](src/assets/front-page-screenshot.png) <!-- Update the path to your screenshot -->
+![Pokemon NFT Game Front Page](src/assets/front-page-screenshot.png) <!-- Update the path to your screenshot -->
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ Welcome to the Bitcoin Game! This web application allows players to interact wit
 ## Features
 
 - **User Account Management:** Manage your account details.
-- **Store:** Purchase items with virtual Bitcoin.
+- **Store:** Purchase items with virtual coin.
 - **Marketplace:** Trade items with other users.
 - **Boosters Section:** Explore various boosters available in the game.
 
