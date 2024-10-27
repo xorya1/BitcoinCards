@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import bigPokemonImage from '/home/kali/BitcoinGame/src/assets/pokemon_TCG.png';
+import bigPokemonImage from '/home/kali/BitcoinGame/src/assets/pokemondaar';
 
 function Home() {
   const handleSpinClick = () => {
