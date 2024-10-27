@@ -5,29 +5,27 @@ import bigPokemonImage from '/home/kali/BitcoinGame/src/assets/pokemon_TCG.png';
 function Home() {
   const handleSpinClick = () => {
     const spinner = document.querySelector('.pokemon');
-    spinner.classList.add('spin', 'expand');
-
+    spinner.classList.add('spin-and-move');
     setTimeout(() => {
-      spinner.classList.remove('spin', 'expand'); // Remove classes after animation
-      window.location.href = '/Account'; // Redirect after animation completes
-    }, 5000); // Redirect time matches total animation duration
+      window.location.href = '/Account';
+    }, 5000); // Redirect after animation completes
   };
 
   return (
     <div className="home-container">
-      <div className="image-container">
+      <div className="left-section">
         <img src={bigPokemonImage} alt="Big Pokémon" className="big-pokemon-image" />
       </div>
-      <div className="content-container">
-        <h2 className="welcome-text">Welcome to the Project</h2>
+      <div className="right-section">
+        <h1 className="welcome-text">Welcome to the Pokémon NFT Project</h1>
         <p className="description">
-          This decentralized Pokémon collectible card game allows you to own, trade, and collect digital Pokémon cards as NFTs on the Ethereum blockchain. Mint new cards, explore boosters, and join the fun!
+          Discover the world of Pokémon NFTs, where each card is a unique collectible on the Ethereum blockchain. Join the game to start collecting, trading, and exploring exclusive digital Pokémon cards.
         </p>
-        <p className="click-text">
-          <span className="arrow">➡</span> Click this spinner to discover the project <span className="arrow">⬅</span>
-        </p>
-        <div className="spinner-container">
-          <div className="pokemon" onClick={handleSpinClick}></div>
+        <div className="click-instructions">
+          <p>Click the Poké Ball spinner to begin your journey!</p>
+        </div>
+        <div className="spinner-container" onClick={handleSpinClick}>
+          <div className="pokemon spinner"></div>
         </div>
       </div>
     </div>
