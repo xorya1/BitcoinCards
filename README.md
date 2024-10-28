@@ -39,12 +39,12 @@ It’s important to launch this project in Kali Linux. If you do not, you may ne
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/xorya0/BitcoinGame.git
+   git clone https://github.com/xorya1/BitcoinCards.git
    ```
 
 2. **Navigate to the project directory:**
    ```
-   cd BitcoinGame
+   cd BitcoinCards
    ```
 
 3. **Install dependencies:** Ensure you have Node.js installed on your machine. If not, download and install it from [Node.js official website](https://nodejs.org/). Then, install the required packages:
@@ -64,7 +64,7 @@ It’s important to launch this project in Kali Linux. If you do not, you may ne
 
 ## Contract Deployment
 
-To use the Bitcoin Game, you need to deploy the smart contract. Follow these steps:
+To use the Bitcoin Card Game, you need to deploy the smart contract. Follow these steps:
 
 1. **Install Hardhat:** If you haven't already, install Hardhat globally:
    ```
@@ -73,7 +73,7 @@ To use the Bitcoin Game, you need to deploy the smart contract. Follow these ste
 
 2. **Navigate to the Hardhat project folder:** (if you have a separate folder for smart contracts)
    ```
-   cd BitcoinGame
+   cd BitcoinCards
    ```
 
 3. **Deploy the contract:**
